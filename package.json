@@ -45,6 +45,23 @@
         "configuration": "./language-configuration.json"
       }
     ],
+    "configuration": [
+      {
+        "title": "Unison",
+        "properties": {
+          "unison.trace.server": {
+            "description": "Traces communication between VS Code and UCM.",
+            "type": "string",
+            "default": "off",
+            "enum": [
+              "off",
+              "messages",
+              "verbose"
+            ]
+          }
+        }
+      }
+    ],
     "grammars": [
       {
         "language": "unison",
